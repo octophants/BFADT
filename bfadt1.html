@@ -16,7 +16,9 @@
 jQuery(function ($) {
     $('.projects').click(function () {
     	$('.box').removeClass('temptoggle');
+    	$('.imgtoggle').removeClass('show');
         $('.box').addClass('original');
+        $('.imgtogglefirst').addClass('show');
     })
 })
 	
@@ -24,7 +26,9 @@ jQuery(function ($) {
 jQuery(function ($) {
     $('.people').click(function () {
     	$('.box').removeClass('original');
-        $('.box').addClass('temptoggle')
+    	$('.imgtogglefirst').removeClass('show');
+        $('.box').addClass('temptoggle');
+        $('.imgtoggle').addClass('show');
     })
 })
 
@@ -39,6 +43,30 @@ body{
 	height: 100vh;
 	background-color: #0F0F0F;
 }
+
+
+
+::-moz-selection { /* Code for Firefox */
+    color: #000000;
+    background-color: rgba(255,255,255,0.99);
+}
+
+::selection {
+    color: #000000; 
+    background-color: rgba(255,255,255,0.99);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #0F0F0F;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.8);
+}
+
+
 
 #topbar{
 	width: 100%;
@@ -84,7 +112,13 @@ z-index: 1;
 	width: 16.35vw;
 	height: 15vw;
 	transform: rotate(0deg);
-	transition: all ease 0.2s;
+	transition: all ease 0.3s;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+	background-image: url(http://fullhdpictures.com/wp-content/uploads/2015/03/Beautiful-Landscape-Wallpapers.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .original{
@@ -93,8 +127,23 @@ z-index: 1;
 }
 
 .temptoggle{
-	background: yellow;
+	background: #FFFFFF;
 	transform: rotate(360deg);
+}
+
+.imgtogglefirst{
+	display: none;
+	opacity: 0;
+}
+
+
+.imgtoggle{
+	display: none;
+	opacity: 0.85;
+}
+
+.show{
+	display: block;
 }
 
 .temppoop{
@@ -104,6 +153,13 @@ z-index: 1;
 	font-size: 2em;
 }
 
+img{
+width: 16.35vw;
+height: 15vw; 
+padding: 0;
+margin: 0;
+}
+
 </style>
 
 </head>
@@ -111,7 +167,7 @@ z-index: 1;
 	<div id="fullpage">
 
 <div class="section">
-	<p class="temppoop">WHADDUP HOMIES LET'S PUT A COOL INTERACTIVE SPLASH THINGY HERE</p>
+	<p class="temppoop">T R A N S P O S I T I O N S</p>
 </div>
 
 
@@ -125,42 +181,78 @@ z-index: 1;
 
 <div id="boxwrapper">
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/pic.jpg">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/kboo.png">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/tiff.png">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/mischa.png">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/laurie.png">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/ben.png">
 </div>
 
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/kyle.png">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/pic.jpg">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/ben.png">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/kboo.png">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/mischa.png">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/tiff.png">
 </div>
 
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/tiff.png">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/laurie.png">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/pic.jpg">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/mischa.png">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/kyle.png">
 </div>
 <div class="box">
+<img class="imgtogglefirst" src="images/redgo2.gif">
+<img class="imgtoggle" src="images/kboo.png">
 </div>
 
 
