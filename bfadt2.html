@@ -1,249 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
 <meta charset="utf-8">
-<title>BFA Design and Technology</title>
-<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:300,400' rel='stylesheet' type='text/css'>
-<style>
-body{
-	background-color: #0D0D0D;
-	color: #EBEBEB;
-	font-family: 'Roboto Mono', monospace;
-	text-align: center;
-	opacity: 0.95;
-}
-
- ::-moz-selection { /* Code for Firefox */
-    color: #000000;
-    background-color: rgba(255,255,255,0.99);
-}
-
-::selection {
-    color: #000000; 
-    background-color: rgba(255,255,255,0.99);
-}
-
-h1{
-	font-weight: 300;
-	font-size: 5vw;
-	letter-spacing: 10px;
-	font-style: italic;
-}
-
-h2{
-	font-weight: 300;
-	font-size: 14px;
-	letter-spacing: 5px;
-}
-
-h3{
-	font-weight: 300;
-	font-size: 12px;
-	letter-spacing: 5px;
-}
-
-h4{
-	font-weight: 300;
-	font-size: 12px;
-	letter-spacing: 5px;
-}
-
-a{
-color: #EBEBEB;
-text-decoration: none;
-padding-bottom: 3px;
-border-bottom: solid 0.1px #EBEBEB;
-}
-
-a:hover{
-	text-shadow: -2.5px 0 #ff0000, 3px 0 #00ffff;
-	font-style: italic;
-}
-
-.emphasis{
-	text-shadow: -2.5px 0 #ff0000, 3px 0 #00ffff;
-}
-
-#place{
-	padding-top: 15vh;
-}
-
-.glitch {
-  position: relative;
-}
-
-@keyframes noise-anim {
-  0% {
-    clip: rect(72px, 9999px, 70px, 0);
-  }
-  5% {
-    clip: rect(46px, 9999px, 16px, 0);
-  }
-  10% {
-    clip: rect(8px, 9999px, 60px, 0);
-  }
-  15% {
-    clip: rect(74px, 9999px, 15px, 0);
-  }
-  20% {
-    clip: rect(4px, 9999px, 17px, 0);
-  }
-  25% {
-    clip: rect(1px, 9999px, 91px, 0);
-  }
-  30% {
-    clip: rect(83px, 9999px, 3px, 0);
-  }
-  35% {
-    clip: rect(26px, 9999px, 80px, 0);
-  }
-  40% {
-    clip: rect(64px, 9999px, 2px, 0);
-  }
-  45% {
-    clip: rect(62px, 9999px, 46px, 0);
-  }
-  50% {
-    clip: rect(1px, 9999px, 48px, 0);
-  }
-  55% {
-    clip: rect(21px, 9999px, 1px, 0);
-  }
-  60% {
-    clip: rect(9px, 9999px, 39px, 0);
-  }
-  65% {
-    clip: rect(61px, 9999px, 57px, 0);
-  }
-  70% {
-    clip: rect(97px, 9999px, 87px, 0);
-  }
-  75% {
-    clip: rect(55px, 9999px, 97px, 0);
-  }
-  80% {
-    clip: rect(45px, 9999px, 92px, 0);
-  }
-  85% {
-    clip: rect(49px, 9999px, 5px, 0);
-  }
-  90% {
-    clip: rect(70px, 9999px, 86px, 0);
-  }
-  95% {
-    clip: rect(8px, 9999px, 13px, 0);
-  }
-  100% {
-    clip: rect(53px, 9999px, 75px, 0);
-  }
-}
-.glitch:after {
-  content: attr(data-text);
-  position: absolute;
-  left: 13.5vw;
-  text-shadow: -3px 0 #ff0000;
-  top: 0;
-  color: white;
-  background: black;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim 5s infinite linear alternate-reverse;
-}
-
-@keyframes noise-anim-2 {
-  0% {
-    clip: rect(15px, 9999px, 91px, 0);
-  }
-  5% {
-    clip: rect(78px, 9999px, 68px, 0);
-  }
-  10% {
-    clip: rect(90px, 9999px, 16px, 0);
-  }
-  15% {
-    clip: rect(6px, 9999px, 32px, 0);
-  }
-  20% {
-    clip: rect(7px, 9999px, 23px, 0);
-  }
-  25% {
-    clip: rect(44px, 9999px, 37px, 0);
-  }
-  30% {
-    clip: rect(40px, 9999px, 51px, 0);
-  }
-  35% {
-    clip: rect(5px, 9999px, 68px, 0);
-  }
-  40% {
-    clip: rect(95px, 9999px, 83px, 0);
-  }
-  45% {
-    clip: rect(53px, 9999px, 60px, 0);
-  }
-  50% {
-    clip: rect(86px, 9999px, 76px, 0);
-  }
-  55% {
-    clip: rect(58px, 9999px, 61px, 0);
-  }
-  60% {
-    clip: rect(98px, 9999px, 28px, 0);
-  }
-  65% {
-    clip: rect(37px, 9999px, 87px, 0);
-  }
-  70% {
-    clip: rect(70px, 9999px, 43px, 0);
-  }
-  75% {
-    clip: rect(12px, 9999px, 21px, 0);
-  }
-  80% {
-    clip: rect(20px, 9999px, 35px, 0);
-  }
-  85% {
-    clip: rect(68px, 9999px, 85px, 0);
-  }
-  90% {
-    clip: rect(37px, 9999px, 13px, 0);
-  }
-  95% {
-    clip: rect(93px, 9999px, 60px, 0);
-  }
-  100% {
-    clip: rect(60px, 9999px, 71px, 0);
-  }
-}
-.glitch:before {
-  content: attr(data-text);
-  position: absolute;
-  left: 13.5vw;
-  text-shadow: 3px 0 #00ffff;
-  top: 0;
-  color: white;
-  background: black;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim-2 5s infinite linear alternate-reverse;
-}
-
-</style>
-
+<title>Demo Artist Page</title>
 </head>
 <body>
-	<div id="place">
-<h2>BFA DT<br><br>a new generation of <span class="emphasis">digital</span> designers</h2>
+	<div id="topbar">
+		<div id="prev"><a href="" class="toplinks noline">prev</a></div>
+		<div id="next"><a href="" class="toplinks noline">next</a></div>
+		<div id="home"><a href="http://bfadt.parsons.edu/" class="toplinks noline">home</a></div>
+	</div>
+	<div id="topdescrips">
+<div id="project">
+<h1>PROJECT NAME</h1>
 <br>
-<h1 class="glitch" data-text="SUPERTRANSPOSITIONS">SUPERTRANSPOSITIONS</h1>
-<br>
-<h3>05/17/16 - 05/22/16</h3>
-<br>
-<h3><a href="http://www.newschool.edu/about/campus-map/?trigger=vera-list-center" target="_blank">Vera List Center // 6 east 16th Street, NY 10003</a></h3>
-<br>
+<p class="description1">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget justo odio. Suspendisse commodo dignissim elit, ac porta elit auctor non. Morbi et nisi nec lacus mattis volutpat quis ut libero. Ut eu lorem vel sem malesuada lacinia at et eros. Etiam congue egestas neque. Curabitur commodo lectus nisi, sed laoreet metus fringilla vel. Nullam convallis pretium mi quis mollis. Proin magna mi, malesuada et purus euismod, maximus placerat leo. In egestas, magna vel lobortis faucibus, est erat tempor ipsum, a dapibus elit eros ac lacus. Nullam mollis vulputate convallis. Nullam porttitor dolor at gravida cursus.
+</p>
 </div>
-<script>
-</script>
 
+<div id="artist">
+<img class="profile" src="http://www.whitetablegallery.org/src/share/default.jpg">
+<br><br>
+<h2>ARTIST NAME</h2>
+<br>
+<p class="artistdescription">Please write something about yourself as an artist. Even a sentence or two is perfectly fine.
+<br><br>
+<a class="toplinks" href="">link1</a>
+<a class="toplinks" href="">link2</a>
+<a class="toplinks" href="">link3</a></p>
+
+</div>
+ </div> <!-- endtopdescrips -->
+
+<div id="maindescription">
+
+<iframe src="https://player.vimeo.com/video/145806111" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p class="para">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum sollicitudin lorem, ac vestibulum augue fringilla malesuada. Praesent vitae interdum sapien. Morbi vehicula, turpis et dapibus accumsan, nisl ipsum pulvinar leo, eget venenatis sem est eu nisi. Donec justo urna, luctus efficitur bibendum eu, maximus nec dui. Sed aliquam consequat ante, eu laoreet massa mollis eu. Pellentesque ac tortor commodo, fringilla dolor vitae, elementum lorem. </p>
+
+<img class="mainimgs" src="https://newevolutiondesigns.com/images/freebies/cool-wallpaper-1.jpg">
+
+<p class="para">Nullam eget diam et ante dapibus tincidunt. Mauris quis orci facilisis, blandit quam et, imperdiet sem. Etiam vel magna quis sapien vulputate cursus. Proin eu pulvinar nibh, ut commodo risus. Phasellus eu sem in tellus finibus fringilla. Duis placerat, tortor quis molestie dignissim, est sem scelerisque mi, dignissim imperdiet massa odio eget nibh.
+</p>
+
+<img class="mainimgs" src="https://newevolutiondesigns.com/images/freebies/cool-wallpaper-1.jpg">
+
+<img class="mainimgs" src="https://newevolutiondesigns.com/images/freebies/cool-wallpaper-1.jpg">
+
+<img class="mainimgs" src="https://newevolutiondesigns.com/images/freebies/cool-wallpaper-1.jpg">
+
+<img class="mainimgs" src="https://newevolutiondesigns.com/images/freebies/cool-wallpaper-1.jpg">
+
+</div> <!-- maindescription -->
 </body>
 </html>

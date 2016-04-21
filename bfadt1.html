@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:300' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.min.js"></script>
 <title>BFA DT THESIS</title>
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
   <link rel="stylesheet" type="text/css" href="scripts/jquery.fullPage.css" />
@@ -133,7 +134,7 @@ z-index: 1;
 
 .imgtogglefirst{
 	display: none;
-	opacity: 0;
+	opacity: 1;
 }
 
 
@@ -160,6 +161,12 @@ padding: 0;
 margin: 0;
 }
 
+ #canvasIdentity{
+            margin: 0 auto;
+        }
+        canvas{
+            text-align: center;
+        }
 </style>
 
 </head>
@@ -167,7 +174,10 @@ margin: 0;
 	<div id="fullpage">
 
 <div class="section">
-	<p class="temppoop">T R A N S P O S I T I O N S</p>
+	<div id="canvasIdentity"></div>
+
+        <script src='web/js/sketch_1.js'></script>
+	<!-- <p class="temppoop">S U P E R T R A N S P O S I T I O N S</p> -->
 </div>
 
 
