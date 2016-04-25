@@ -103,7 +103,7 @@
             menu: false,
             anchors:[],
             lockAnchors: false,
-            // anchors:['firstPage', 'secondPage', 'thirdPage'],
+            anchors:['firstPage', 'secondPage', 'thirdPage'],
             navigation: false,
             navigationPosition: 'right',
             navigationTooltips: [],
