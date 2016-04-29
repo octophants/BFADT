@@ -1,4 +1,4 @@
-var count = 15;
+var count = 10;
 var rep = 5; 
 
 var textMap, canvas, ctx, logo; 
@@ -12,36 +12,51 @@ var preload = function(){
 	logo = loadImage("scripts/assets/supertranspositions_3.svg");
 };
 
+console.log("sketch_0");
+
 var setup = function(){
 	var c = createCanvas(windowWidth, windowHeight);
 	c.parent('canvasIdentity');
 	canvas = document.getElementById("defaultCanvas0");
 	ctx = canvas.getContext("2d");
 	pixelDensity(1); 
-	textMap = renderMap();
-	rep = floor(height/logoHeight)-1; 
-	for(var i=0; i<rep; i++){
-		var temp = makeImageData();
-		images.push( temp );
-	}
-	console.log(images);
-};
-
-var renderMap = function(){
+	
 	logoWidth = width*0.9;
 	logoHeight = (width*0.9)*0.073529412;
 	margin = (width-logoWidth)/2;
+
+	rep = floor(height/logoHeight)-1; 
+	offset = (height/2)-(logoHeight*rep)/2;
+
+	textMap = renderMap();
+
+	image(textMap, 0, 0);
+
+	for(var i=0; i<rep; i++){
+		var temp = makeImageData( i*logoHeight+offset );
+		images.push( imageData );
+	}
+};
+
+var renderMap = function(){
 	var g = createGraphics(width, logoHeight+3);
 	g.background(0);
 	g.image(logo, margin, 0, logoWidth, logoHeight);
-	return g; 
+
+	var fullG = createGraphics(width, height);
+	for(var i=0; i<rep; i++){
+		fullG.image(g, 0, i*logoHeight+offset, width, logoHeight);	
+	}
+
+	return fullG;
 };
+
 
 var draw = function(){
 	clear();
 	var offset = height/2-((logoHeight*rep)/2);
+	image(textMap, 0, 0);
 	for(var i=0; i<rep; i++){
-		image(textMap, 0, i*logoHeight+offset, textMap.width, logoHeight);	
 		for(var j=0; j<count; j++){
 			var mappedW = round( map(mouseX, 0, width, -images[i][j].w, images[i][j].w) );
 			if(mappedW<0){
@@ -59,7 +74,7 @@ var windowResized = function(){
   resizeCanvas(windowWidth, windowHeight);
 };
 
-var makeImageData = function(){
+var makeImageData = function(y){
 	var imageData = []; 
 	for(var i=0; i<count; i++){	
 		var xx = random(margin, width-margin);
@@ -67,8 +82,8 @@ var makeImageData = function(){
 		var tempData = {
 			x: xx,
 			w: ww,
-			left: textMap.get(xx-ww, 0, ww, textMap.height), 
-			right: textMap.get(xx, 0, ww, textMap.height) 
+			left: textMap.get(xx-ww, y, ww, logoHeight), 
+			right: textMap.get(xx, y, ww, logoHeight) 
 		};
 		imageData.push( tempData );
 	}

@@ -15,6 +15,8 @@ var preload = function(){
 	logo = loadImage("scripts/assets/supertranspositions_3.svg");
 };
 
+console.log("sketch_2");
+
 var setup = function(){
 	var c = createCanvas(windowWidth, windowHeight);
 	c.parent('canvasIdentity');

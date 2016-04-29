@@ -11,8 +11,8 @@
   <script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-			});
-		});
+			});;
+		});;
 
 jQuery(function ($) {
     $('.projects').click(function () {
@@ -24,8 +24,8 @@ jQuery(function ($) {
         $('.imgtogglefirst').addClass('show');
         $('.hovers').addClass('rotatepara');
         $('.nullhover').addClass('rotatepara2');
-    })
-})
+    });
+});
 	
 
 jQuery(function ($) {
@@ -38,506 +38,492 @@ jQuery(function ($) {
         $('.nullhover').removeClass('rotatepara2');
         $('.box').addClass('temptoggle');
         $('.imgtoggle').addClass('show');
-    })
-})
+    });
+});
 
 jQuery(function ($) {
     $('.mischa').hover(function () {
     	$('.mischahover').addClass('showpara');
     }, function(){
     	$('.mischahover').removeClass('showpara');
-    })
+    });
 
     $('.nobo').hover(function () {
     	$('.nobohover').addClass('showpara');
     }, function(){
     	$('.nobohover').removeClass('showpara');
-    })
+    });
 
 
     $('.angela').hover(function () {
     	$('.angelahover').addClass('showpara');
     }, function(){
     	$('.angelahover').removeClass('showpara');
-    })
+    });
 
     $('.nevaris').hover(function () {
     	$('.nevarishover').addClass('showpara');
     }, function(){
     	$('.nevarishover').removeClass('showpara');
-    })
+    });
 
     $('.mady').hover(function () {
     	$('.madyhover').addClass('showpara');
     }, function(){
     	$('.madyhover').removeClass('showpara');
-    })
+    });
 
     $('.jessy').hover(function () {
     	$('.jessyhover').addClass('showpara');
     }, function(){
     	$('.jessyhover').removeClass('showpara');
-    })
+    });
 
     $('.tiffany').hover(function () {
     	$('.tiffanyhover').addClass('showpara');
     }, function(){
     	$('.tiffanyhover').removeClass('showpara');
-    })
+    });
 
 
     $('.summer').hover(function () {
     	$('.summerhover').addClass('showpara');
     }, function(){
     	$('.summerhover').removeClass('showpara');
-    })
+    });
 
     $('.khushboo').hover(function () {
     	$('.kboohover').addClass('showpara');
     }, function(){
     	$('.kboohover').removeClass('showpara');
-    })
+    });
 
     $('.sam').hover(function () {
     	$('.samhover').addClass('showpara');
     }, function(){
     	$('.samhover').removeClass('showpara');
-    })
+    });
 
     $('.melissa').hover(function () {
     	$('.melissahover').addClass('showpara');
     }, function(){
     	$('.melissahover').removeClass('showpara');
-    })
+    });
 
     $('.natalia').hover(function () {
     	$('.nataliahover').addClass('showpara');
     }, function(){
     	$('.nataliahover').removeClass('showpara');
-    })
+    });
 
 
     $('.grant').hover(function () {
     	$('.granthover').addClass('showpara');
     }, function(){
     	$('.granthover').removeClass('showpara');
-    })
+    });
 
     $('.peter').hover(function () {
     	$('.peterhover').addClass('showpara');
     }, function(){
     	$('.peterhover').removeClass('showpara');
-    })
+    });
 
     $('.simon').hover(function () {
     	$('.simonhover').addClass('showpara');
     }, function(){
     	$('.simonhover').removeClass('showpara');
-    })
+    });
 
      $('.laurie').hover(function () {
     	$('.lauriehover').addClass('showpara');
     }, function(){
     	$('.lauriehover').removeClass('showpara');
-    })
+    });
 
-
-})
+});
 
 		</script>
 <style>
-body{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	width: 100%;
-	height: 100vh;
-	background-color: #0F0F0F;
-}
+        body{
+        	margin: 0;
+        	padding: 0;
+        	border: 0;
+        	width: 100%;
+        	height: 100vh;
+        	background-color: #0F0F0F;
+        }
 
 
 
-::-moz-selection { /* Code for Firefox */
-    color: #000000;
-    background-color: rgba(255,255,255,0.99);
-}
+        ::-moz-selection { /* Code for Firefox */
+            color: #000000;
+            background-color: rgba(255,255,255,0.99);
+        }
 
-::selection {
-    color: #000000; 
-    background-color: rgba(255,255,255,0.99);
-}
+        ::selection {
+            color: #000000; 
+            background-color: rgba(255,255,255,0.99);
+        }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background-color: #0F0F0F;
-}
-::-webkit-scrollbar-thumb {
-    background-color: rgba(255,255,255,0.8);
-}
-
-
-
-#topbar{
-	width: 100%;
-	height: 80px;
-	background-color: #0F0F0F;
-	text-align: center;
-	font-family: 'Source Code Pro', monospace;
-	font-size: 16px;
-	color: #EBEBEB;
-	display: inline-block;
-	top: 0;
-	/*position: fixed;*/
-	z-index: 2;
-}
-
-.listelements{
-	padding: 10px;
-	display: inline-block;
-	cursor: pointer;
-	border-bottom: 0px;
-	padding-bottom: 0;
-	transition: all ease 0.2s;
-	opacity: 0.8;
-}
-
-.listelements:hover{
-/*	padding-bottom: 10px;
-*/  /* border-bottom: 0.5px solid #EBEBEB;*/
-   text-shadow: -4px 0px 0px #FF0000, 4px 0px 0px #00FFFF;
-   opacity: 1;
-}
-
-a.aboutlink{
-	text-decoration: none;
-	color: #EBEBEB;
-}
-
-#boxwrapper{
-width: 100%;
-text-align: center;
-position: relative;
-z-index: 1;
-}
-
-.box{
-	margin: -0.1vw;
-	background-color: #0F0F0F;
-	display: inline-block;
-	width: 16.35vw;
-	height: 15vw;
-	transform: rotate(0deg);
-	transition: all ease 0.3s;
-	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
-    filter: grayscale(0%);
-	background-size: cover;
-    background-image: url("designers/images/covers/splash2.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    pointer-events: none;
-}
-
-.addpointer{
-    pointer-events: auto;
-}
-
-.original{
-	background: #0F0F0F;
-	transform: rotate(180deg);
-}
-
-.temptoggle{
-	background: #0F0F0F;
-	transform: rotate(360deg);
-}
-
-.imgtogglefirst{
-	display: none;
-	opacity: 0.9;
-	transform: rotate(180deg);
-	transition: all ease 0.2s;
-    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
-    filter: grayscale(0%);
-}
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: #0F0F0F;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(255,255,255,0.8);
+        }
 
 
-.imgtoggle{
-	display: none;
-	opacity: 0.9;
-	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
-    transition: all ease 0.2s;
-}
 
-.imgtoggle:hover, .imgtogglefirst:hover{
-opacity: 0.1;
-}
+        #topbar{
+        	width: 100%;
+        	height: 80px;
+        	background-color: #0F0F0F;
+        	text-align: center;
+        	font-family: 'Source Code Pro', monospace;
+        	font-size: 16px;
+        	color: #EBEBEB;
+        	display: inline-block;
+        	top: 0;
+        	/*position: fixed;*/
+        	z-index: 2;
+        }
 
-.show{
-	display: block;
-}
+        .listelements{
+        	padding: 10px;
+        	display: inline-block;
+        	cursor: pointer;
+        	border-bottom: 0px;
+        	padding-bottom: 0;
+        	transition: all ease 0.2s;
+        	opacity: 0.8;
+        }
 
-/*.temppoop{
-	color: white;
-	text-align:center;
-	font-family: 'Source Code Pro';
-	font-size: 2em;
-}
-*/
-img{
-width: 16.35vw;
-height: 15vw; 
-padding: 0;
-margin: 0;
-}
+        .listelements:hover{
+        /*	padding-bottom: 10px;
+        */  /* border-bottom: 0.5px solid #EBEBEB;*/
+           text-shadow: -4px 0px 0px #FF0000, 4px 0px 0px #00FFFF;
+           opacity: 1;
+        }
 
-#canvasIdentity{
-margin: 0 auto;
-}
+        a.aboutlink{
+        	text-decoration: none;
+        	color: #EBEBEB;
+        }
 
-canvas{
-text-align: center;
-}
+        #boxwrapper{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        }
 
-.mischahover, .nobohover, .angelahover, .nevarishover,.madyhover, .jessyhover, .tiffanyhover, .summerhover, .kboohover, .samhover, .melissahover, .nataliahover, .granthover, .peterhover, .simonhover, .lauriehover {
-width: 100%; 
-text-align: center;
-position: absolute;
-margin-top: -10vw;
-font-family: 'Source Code Pro', monospace;
-font-size: 14px;
-color: #EBEBEB;
-display: none;
-pointer-events: none;
-transition: all ease 0.2s;
-}
+        .box{
+        	margin: -0.1vw;
+        	background-color: #0F0F0F;
+        	display: inline-block;
+        	width: 16.35vw;
+        	height: 15vw;
+        	transform: rotate(0deg);
+        	transition: all ease 0.3s;
+        	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+            filter: grayscale(0%);
+        	background-size: cover;
+            background-image: url("designers/images/covers/splash2.png");
+        	background-repeat: no-repeat;
+        	background-attachment: fixed;
+            pointer-events: none;
+        }
 
-.nullhover{
-    width: 100%;
-    text-align: center;
-    padding-top: 6vw;
-    position: absolute;
-    color: #EBEBEB;
-    display: block;
-    font-family: 'Source Code Pro', monospace;
-    text-shadow: -1px 0px 0px #FF0000, 1px 0px 0px #00FFFF;
-    font-size: 14px;
-    opacity: 0;
-}
+        .addpointer{
+            pointer-events: auto;
+        }
 
-.shownullhover{
-    opacity: 1;
-}
+        .original{
+        	background: #0F0F0F;
+        	transform: rotate(180deg);
+        }
 
-.rotatepara{
-transform: rotate(180deg);
-}
+        .temptoggle{
+        	background: #0F0F0F;
+        	transform: rotate(360deg);
+        }
 
-.rotatepara2{
-    padding-bottom: 6vw;
-transform: rotate(180deg);
-}
+        .imgtogglefirst{
+        	display: none;
+        	opacity: 0.9;
+        	transform: rotate(180deg);
+        	transition: all ease 0.2s;
+            -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+            filter: grayscale(0%);
+        }
 
-.showpara{
-	display: block;
 
-}
+        .imgtoggle{
+        	display: none;
+        	opacity: 0.9;
+        	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+            filter: grayscale(100%);
+            transition: all ease 0.2s;
+        }
 
-.emphasis1{
-    font-style: italic;
-    text-shadow: -1px 0px 0px #FF0000, 1px 0px 0px #00FFFF;
-}
+        .imgtoggle:hover, .imgtogglefirst:hover{
+        opacity: 0.1;
+        }
 
-.aboutpara{
-    font-family: 'Source Code Pro', Arial, monospace;
-    color: #EBEBEB;
-    font-size: 16px;
-    width: 70vw;
-    margin-left: 14vw;
-    margin-right: 14vw;
-}
+        .show{
+        	display: block;
+        }
 
-.aboutpara a{
-    color: #EBEBEB;
-    text-decoration: none;
-    font-style: italic;
-}
+        /*.temppoop{
+        	color: white;
+        	text-align:center;
+        	font-family: 'Source Code Pro';
+        	font-size: 2em;
+        }
+        */
+        img{
+        width: 16.35vw;
+        height: 15vw; 
+        padding: 0;
+        margin: 0;
+        }
 
-</style>
+        #canvasIdentity{
+        margin: 0 auto;
+        }
 
+        canvas{
+        text-align: center;
+        }
+
+        .mischahover, .nobohover, .angelahover, .nevarishover,.madyhover, .jessyhover, .tiffanyhover, .summerhover, .kboohover, .samhover, .melissahover, .nataliahover, .granthover, .peterhover, .simonhover, .lauriehover {
+        width: 100%; 
+        text-align: center;
+        position: absolute;
+        margin-top: -10vw;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 14px;
+        color: #EBEBEB;
+        display: none;
+        pointer-events: none;
+        transition: all ease 0.2s;
+        }
+
+        .nullhover{
+            width: 100%;
+            text-align: center;
+            padding-top: 6vw;
+            position: absolute;
+            color: #EBEBEB;
+            display: block;
+            font-family: 'Source Code Pro', monospace;
+            text-shadow: -1px 0px 0px #FF0000, 1px 0px 0px #00FFFF;
+            font-size: 14px;
+            opacity: 0;
+        }
+
+        .shownullhover{
+            opacity: 1;
+        }
+
+        .rotatepara{
+        transform: rotate(180deg);
+        }
+
+        .rotatepara2{
+            padding-bottom: 6vw;
+        transform: rotate(180deg);
+        }
+
+        .showpara{
+        	display: block;
+
+        }
+
+        .emphasis1{
+            font-style: italic;
+            text-shadow: -1px 0px 0px #FF0000, 1px 0px 0px #00FFFF;
+        }
+
+        .aboutpara{
+            font-family: 'Source Code Pro', Arial, monospace;
+            color: #EBEBEB;
+            font-size: 16px;
+            width: 70vw;
+            margin-left: 14vw;
+            margin-right: 14vw;
+        }
+
+        .aboutpara a{
+            color: #EBEBEB;
+            text-decoration: none;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-	<div id="fullpage">
+    <div id="fullpage">
 
-<div class="section">
-	<div id="canvasIdentity"></div>
-    <script src='scripts/sketch_2.js'></script>
-	<!-- <p class="temppoop">S U P E R T R A N S P O S I T I O N S</p> -->
-</div>
+        <div class="section">
+            <div id="canvasIdentity"></div>
+        </div>
 
 
-<div class="section">
-<div id="topbar">
-<ul>
-<li class="listelements"><a class="projects">projects</a></li> //
-<li class="listelements"><a class="people">designers</a></li> //
-<li class="listelements"><a class="aboutlink" href="#thirdPage">about</a></li>
-</ul>
-</div>
+        <div class="section">
+            <div id="topbar">
+                <ul>
+                    <li class="listelements"><a class="projects">projects</a></li> //
+                    <li class="listelements"><a class="people">designers</a></li> //
+                    <li class="listelements"><a class="aboutlink" href="#thirdPage">about</a></li>
+                </ul>
+            </div>
 
-<div id="boxwrapper">
+            <div id="boxwrapper">
 
-<a href="http://bfadt.parsons.edu/designers/mischa.html"><div class="box mischa">
-<img class="imgtogglefirst" src="designers/images/covers/mischa_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/mischa.png">
-<p class="hovers mischahover"><span class="emphasis1">octocom</span> <br><br>mischa abakumova</p>
-</div></a>
+                <!-- //////////////////////////////////////////////////////////////////////////////////////// ROW 1 -->
 
-<a href="http://bfadt.parsons.edu/designers/nobonita.html"><div class="box nobo">
-<img class="imgtogglefirst" src="designers/images/covers/nobo_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/nobo.png">
-<p class="hovers nobohover"><span class="emphasis1">from roots to needles</span> <br><br>nobonita bhowmik</p>
-</div></a>
+                <a href="http://bfadt.parsons.edu/designers/mischa.html">
+                    <div class="box mischa">
+                        <img class="imgtogglefirst" src="designers/images/covers/mischa_cover.png">
+                        <img class="imgtoggle" src="designers/images/profiles/mischa.png">
+                        <p class="hovers mischahover"><span class="emphasis1">octocom</span> <br><br>mischa abakumova</p>
+                    </div>
+                </a>
+                <a href="http://bfadt.parsons.edu/designers/nobonita.html">
+                    <div class="box nobo">
+                        <img class="imgtogglefirst" src="designers/images/covers/nobo_cover.png">
+                        <img class="imgtoggle" src="designers/images/profiles/nobo.png">
+                        <p class="hovers nobohover"><span class="emphasis1">from roots to needles</span> <br><br>nobonita bhowmik</p>
+                    </div>
+                </a>
+                <a href="http://bfadt.parsons.edu/designers/angela.html">
+                    <div class="box angela">
+                    <img class="imgtogglefirst" src="designers/images/covers/angela_cover.png">
+                    <img class="imgtoggle" src="designers/images/profiles/angela.png">
+                    <p class="hovers angelahover"><span class="emphasis1">mood</span> <br><br>angela chen</p>
+                    </div>
+                </a>
+                <a href="http://bfadt.parsons.edu/designers/nevaris.html">
+                    <div class="box nevaris">
+                        <img class="imgtogglefirst" src="designers/images/covers/nevaris_cover.png">
+                        <img class="imgtoggle" src="designers/images/profiles/nevaris.png">
+                        <p class="hovers nevarishover"><span class="emphasis1">digitalphysical</span> <br><br>nevaris crawford</p>
+                    </div>
+                </a>
+                <a href="http://bfadt.parsons.edu/designers/mady.html">
+                    <div class="box mady">
+                        <img class="imgtogglefirst" src="designers/images/covers/mady_cover.jpg">
+                        <img class="imgtoggle" src="designers/images/profiles/mady.png">
+                        <p class="hovers madyhover"><span class="emphasis1">cathexis</span> <br><br>mady dean</p>
+                    </div>
+                </a>
+                <a href="http://bfadt.parsons.edu/designers/jessy.html">
+                    <div class="box jessy">
+                        <img class="imgtogglefirst" src="designers/images/covers/jessy_cover.png">
+                        <img class="imgtoggle" src="designers/images/profiles/jessy.png">
+                        <p class="hovers jessyhover"><span class="emphasis1">black box</span> <br><br>jessy jo gomez</p>
+                    </div>
+                </a>
 
-<a href="http://bfadt.parsons.edu/designers/angela.html"><div class="box angela">
-<img class="imgtogglefirst" src="designers/images/covers/angela_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/angela.png">
-<p class="hovers angelahover"><span class="emphasis1">mood</span> <br><br>angela chen</p>
-</div></a>
-
-<a href="http://bfadt.parsons.edu/designers/nevaris.html"><div class="box nevaris">
-<img class="imgtogglefirst" src="designers/images/covers/nevaris_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/nevaris.png">
-<p class="hovers nevarishover"><span class="emphasis1">digitalphysical</span> <br><br>nevaris crawford</p>
-</div></a>
-
-<a href="http://bfadt.parsons.edu/designers/mady.html"><div class="box mady">
-<img class="imgtogglefirst" src="designers/images/covers/mady_cover.jpg">
-<img class="imgtoggle" src="designers/images/profiles/mady.png">
-<p class="hovers madyhover"><span class="emphasis1">cathexis</span> <br><br>mady dean</p>
-</div></a>
-
-<a href="http://bfadt.parsons.edu/designers/jessy.html"><div class="box jessy">
-<img class="imgtogglefirst" src="designers/images/covers/jessy_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/jessy.png">
-<p class="hovers jessyhover"><span class="emphasis1">black box</span> <br><br>jessy jo gomez</p>
-</div></a>
-
-<a href="http://bfadt.parsons.edu/designers/tiffany.html"><div class="box tiffany">
-<img class="imgtogglefirst" src="designers/images/covers/tiffany_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/tiffany.png">
-<p class="hovers tiffanyhover"><span class="emphasis1">cupola</span> <br><br>tiffany kao</p>
-</div></a>
-
-<a href="http://bfadt.parsons.edu/designers/summer.html"><div class="box summer">
-<img class="imgtogglefirst" src="designers/images/covers/summer_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/summer.png">
-<p class="hovers summerhover"><span class="emphasis1">tale of the lava rock man</span> <br><br>summer lacuin</p>
-</div></a>
-
-<a href="http://bfadt.parsons.edu/designers/khushboo.html"><div class="box khushboo">
-<img class="imgtogglefirst" src="designers/images/covers/kboo_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/kboo.png">
-<p class="hovers kboohover"><span class="emphasis1">intertidal</span> <br><br>khushboo lalwani</p>
-</div></a>
-
-<div class="box">
-<p class="nullhover">BFA DT</p>
-</div>
-
-<div class="box">
-<p class="nullhover"><i>class of 2016</i></p>
-</div>
-
-<!-- <div class="box">
-<img class="imgtogglefirst" src="images/redgo2.gif">
-<img class="imgtoggle" src="images/tiff.png">
-</div>
-
-<div class="box">
-<img class="imgtogglefirst" src="images/redgo2.gif">
-<img class="imgtoggle" src="images/kboo.png">
-</div> -->
-
-<a href="http://bfadt.parsons.edu/designers/sam.html"><div class="box sam">
-<img class="imgtogglefirst" src="designers/images/covers/sam_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/sam.png">
-<p class="hovers samhover"><span class="emphasis1">portal</span>  <br><br>sam madhu</p>
-</div></a>
-
-<a href="http://bfadt.parsons.edu/designers/melissa.html"><div class="box melissa">
-<img class="imgtogglefirst" src="designers/images/covers/melissa_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/melissa.png">
-<p class="hovers melissahover"><span class="emphasis1">stop shooting: save our youth</span>  <br><br>melissa martinez</p>
-
-</div></a>
-
-<a href="http://bfadt.parsons.edu/designers/natalia.html"><div class="box natalia">
-<img class="imgtogglefirst" src="designers/images/covers/natalia_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/natalia.png">
-<p class="hovers nataliahover"><span class="emphasis1">dissolving physicalities & extended bodies</span>  <br><br>natalia mrozek</p>
-
-</div></a>
-
-<a href="http://bfadt.parsons.edu/designers/grant.html"><div class="box grant">
-<img class="imgtogglefirst" src="designers/images/covers/grant_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/grant.png">
-<p class="hovers granthover"><span class="emphasis1">materoleum</span>  <br><br>grant schofield</p>
-
-</div></a>
-
-<a href="http://bfadt.parsons.edu/designers/peter.html"><div class="box peter">
-<img class="imgtogglefirst" src="designers/images/covers/petertoh_cover.jpg">
-<img class="imgtoggle" src="designers/images/profiles/peter.png">
-<p class="hovers peterhover"><span class="emphasis1">master clock</span> <br><br>peter toh</p>
-</div></a>
-
-<a href="http://bfadt.parsons.edu/designers/simon.html"><div class="box simon">
-<img class="imgtogglefirst" src="designers/images/covers/simon_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/simon.png">
-<p class="hovers simonhover"><span class="emphasis1">tower rangers</span>  <br><br>simon yang</p>
-</div></a>
-
-<a href="http://bfadt.parsons.edu/designers/laurie.html"><div class="box laurie">
-<img class="imgtogglefirst" src="designers/images/covers/laurie_cover.png">
-<img class="imgtoggle" src="designers/images/profiles/laurie.png">
-<p class="hovers lauriehover"><span class="emphasis1">flandill</span> <br><br>laurie waxman</p>
-</div></a>
+                <!-- //////////////////////////////////////////////////////////////////////////////////////// ROW 2 -->
 
 
+                <a href="http://bfadt.parsons.edu/designers/tiffany.html">
+                    <div class="box tiffany">
+                        <img class="imgtogglefirst" src="designers/images/covers/tiffany_cover.png">
+                        <img class="imgtoggle" src="designers/images/profiles/tiffany.png">
+                        <p class="hovers tiffanyhover"><span class="emphasis1">cupola</span> <br><br>tiffany kao</p>
+                    </div>
+                </a>
+                <a href="http://bfadt.parsons.edu/designers/summer.html">
+                    <div class="box summer">
+                        <img class="imgtogglefirst" src="designers/images/covers/summer_cover.png">
+                        <img class="imgtoggle" src="designers/images/profiles/summer.png">
+                        <p class="hovers summerhover"><span class="emphasis1">tale of the lava rock man</span> <br><br>summer lacuin</p>
+                    </div>
+                </a>
+                <a href="http://bfadt.parsons.edu/designers/khushboo.html">
+                    <div class="box khushboo">
+                        <img class="imgtogglefirst" src="designers/images/covers/kboo_cover.png">
+                        <img class="imgtoggle" src="designers/images/profiles/kboo.png">
+                        <p class="hovers kboohover"><span class="emphasis1">intertidal</span> <br><br>khushboo lalwani</p>
+                    </div>
+                </a>
+                <div class="box">
+                    <p class="nullhover">BFA DT</p>
+                </div>
+                <div class="box">
+                    <p class="nullhover"><i>class of 2016</i></p>
+                </div>
+                <a href="http://bfadt.parsons.edu/designers/sam.html">
+                    <div class="box sam">
+                        <img class="imgtogglefirst" src="designers/images/covers/sam_cover.png">
+                        <img class="imgtoggle" src="designers/images/profiles/sam.png">
+                        <p class="hovers samhover"><span class="emphasis1">portal</span>  <br><br>sam madhu</p>
+                    </div>
+                </a>
+
+                 <!-- //////////////////////////////////////////////////////////////////////////////////////// ROW 3 -->
 
 
+                <a href="http://bfadt.parsons.edu/designers/melissa.html">
+                    <div class="box melissa">
+                        <img class="imgtogglefirst" src="designers/images/covers/melissa_cover.png">
+                        <img class="imgtoggle" src="designers/images/profiles/melissa.png">
+                        <p class="hovers melissahover"><span class="emphasis1">stop shooting: save our youth</span>  <br><br>melissa martinez</p>
+                    </div>
+                </a>
+                <a href="http://bfadt.parsons.edu/designers/natalia.html">
+                    <div class="box natalia">
+                        <img class="imgtogglefirst" src="designers/images/covers/natalia_cover.png">
+                        <img class="imgtoggle" src="designers/images/profiles/natalia.png">
+                        <p class="hovers nataliahover"><span class="emphasis1">dissolving physicalities & extended bodies</span>  <br><br>natalia mrozek</p>
+                    </div>
+                </a>
+                <a href="http://bfadt.parsons.edu/designers/grant.html">
+                    <div class="box grant">
+                        <img class="imgtogglefirst" src="designers/images/covers/grant_cover.png">
+                        <img class="imgtoggle" src="designers/images/profiles/grant.png">
+                        <p class="hovers granthover"><span class="emphasis1">materoleum</span>  <br><br>grant schofield</p>
+                    </div>
+                </a>
+                <a href="http://bfadt.parsons.edu/designers/peter.html">
+                    <div class="box peter">
+                        <img class="imgtogglefirst" src="designers/images/covers/petertoh_cover.jpg">
+                        <img class="imgtoggle" src="designers/images/profiles/peter.png">
+                        <p class="hovers peterhover"><span class="emphasis1">master clock</span> <br><br>peter toh</p>
+                    </div>
+                </a>
+                <a href="http://bfadt.parsons.edu/designers/simon.html">
+                    <div class="box simon">
+                        <img class="imgtogglefirst" src="designers/images/covers/simon_cover.png">
+                        <img class="imgtoggle" src="designers/images/profiles/simon.png">
+                        <p class="hovers simonhover"><span class="emphasis1">tower rangers</span>  <br><br>simon yang</p>
+                    </div>
+                </a>
+                <a href="http://bfadt.parsons.edu/designers/laurie.html">
+                    <div class="box laurie">
+                        <img class="imgtogglefirst" src="designers/images/covers/laurie_cover.png">
+                        <img class="imgtoggle" src="designers/images/profiles/laurie.png">
+                        <p class="hovers lauriehover"><span class="emphasis1">flandill</span> <br><br>laurie waxman</p>
+                    </div>
+                </a>
+            </div>
+         </div>
 
+        <div class="section">
+            <p class="aboutpara">Supertranpositions is a collective of 16 digital designers from the BFA Design and Technology program at Parsons. The designers represent the graduating class of 2016 and demonstrate the evolving nature of the program through dynamic projects which are born from an amalgamation of technology and design thinking. Supertranspositions places emphasis on the procedural bridge between conceptualization and technical production.</p>
 
+            <p class="aboutpara">The <a class="listelements" href="http://www.newschool.edu/parsons/bfa-design-technology/" target="_blank">BFA Design and Technology</a> program at Parsons focuses on time-based media, interaction, and experiential design. Through courses, collaborative projects, internships, and sponsored projects, the program immerses you in emerging design and art practices such as computational art, game design, physical computing, computer graphics, and experimental interfaces.</p>
 
-<!-- <div class="box">
-<img class="imgtogglefirst" src="images/redgo2.gif">
-<img class="imgtoggle" src="images/tiff.png">
-</div>
+            <p class="aboutpara"><b><i>This design collective was instructed by Kyle Li (Director of BFA DT), Benjamin Norskov and Ernesto Klar.</i></b></p>
 
-<div class="box">
-<img class="imgtogglefirst" src="images/redgo2.gif">
-<img class="imgtoggle" src="images/kboo.png">
-</div> -->
-
-
-</div>
-</div>
-
-<div class="section">
-	<p class="aboutpara">Supertranpositions is a collective of 16 digital designers from the BFA Design and Technology program at Parsons. The designers represent the graduating class of 2016 and demonstrate the evolving nature of the program through dynamic projects which are born from an amalgamation of technology and design thinking. Supertranspositions places emphasis on the procedural bridge between conceptualization and technical production.</p>
-
-    <p class="aboutpara">The <a class="listelements" href="http://www.newschool.edu/parsons/bfa-design-technology/" target="_blank">BFA Design and Technology</a> program at Parsons focuses on time-based media, interaction, and experiential design. Through courses, collaborative projects, internships, and sponsored projects, the program immerses you in emerging design and art practices such as computational art, game design, physical computing, computer graphics, and experimental interfaces.</p>
-
-    <p class="aboutpara"><b><i>This design collective was instructed by Kyle Li (Director of BFA DT), Benjamin Norskov and Ernesto Klar.</i></b></p>
-
-</div>
-
-</div>
-
-
+        </div>
+    </div>
 
 </body>
 </html>

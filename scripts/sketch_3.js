@@ -15,6 +15,9 @@ var preload = function(){
 	logo = loadImage("scripts/assets/supertranspositions_3.svg");
 };
 
+console.log("sketch_3");
+
+
 var setup = function(){
 	var c = createCanvas(windowWidth, windowHeight);
 	c.parent('canvasIdentity');
@@ -43,7 +46,6 @@ var renderMap = function(){
 
 	var fullG = createGraphics(width, height);
 	for(var i=0; i<rep; i++){
-		console.log("image"+i, i*logoHeight+offset);
 		fullG.image(g, 0, i*logoHeight+offset, width, logoHeight);	
 	}
 	return fullG;
