@@ -4,6 +4,9 @@
   	src: url('fonts/Replica-Bold.ttf') format('truetype');
 }
 
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400);
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -21,13 +24,14 @@ html,body{
 	height: 100vh;
 	position: fixed;
 	z-index: 2;
-	    -webkit-box-shadow:inset 0px 0px 0px 25px #0F0F0F;
+    -webkit-box-shadow:inset 0px 0px 0px 25px #0F0F0F;
     -moz-box-shadow:inset 0px 0px 0px 25px #0F0F0F;
     box-shadow:inset 0px 0px 0px 25px #0F0F0F;
     pointer-events: none;
 }
 
-::-moz-selection { /* Code for Firefox */
+/* Code for Firefox */
+::-moz-selection { 
     color: #ffffff;
     background-color: rgba(0,0,0,0.99);
 }
@@ -92,6 +96,7 @@ html,body{
 
 #topdescrips{
 	width: 100%;
+	z-index: 10;
 	/*border-bottom: 2px solid #0F0F0F;*/
 }
 
@@ -108,6 +113,7 @@ h1{
 	text-transform: uppercase;
 	font-family: 'Replica', 'Helvetica', sans-serif;
 	font-size: 5vw;
+	line-height: 5vw;
 	letter-spacing: 5px;
 	text-shadow: -1.8px -1.8px 0px #FF0000, 1.8px 1.8px 0px #00FFFF;
 	margin-bottom: 15px;
@@ -124,30 +130,22 @@ h2{
 	font-size: 2vw;
 	letter-spacing: 3px;
 	text-align: right;
-// 	-webkit-transform: skew(10deg);
-// 	   -moz-transform: skew(10deg);
-// 	    -o-transform: skew(10deg);
-// }
 }
 
-.captions{
-	opacity: 1;
-	text-align: center;
-	color: #0F0F0F;
-	text-transform: uppercase;
-	font-family: 'Source Code Pro', 'Menlo', 'Monaco', monospace;
-	font-size: 14px;
-	padding-bottom: 1px;
-/*	border-bottom: 1px solid #0F0F0F;*/
-}
-
-.description1{
+#topdescrips #project p.description1{
 	font-family: 'Source Code Pro', 'Menlo', 'Monaco', monospace;
 	font-weight: 400;
 	font-size: 14px;
 	margin-bottom: 15px;
 }
 
+a.viewproject{
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: none;
+	margin-bottom: 15px;
+	font-family: 'Source Code Pro', 'Menlo', 'Monaco', monospace;
+}
 
 #artist{
 	background: #0F0F0F;
@@ -163,7 +161,7 @@ h2{
     -moz-transform: skew(-10deg);
     -o-transform: skew(-10deg);
     border-right: 20px solid #0F0F0F;
-    border-left: 2px solid white;
+    z-index: 40;
 }
 
 #artist #fixSkew{
@@ -209,13 +207,9 @@ h2{
 	font-size: 12px;
 	border-bottom: 0px solid #E8E8E8;
 	transition: all ease 0.2s;
-	// -webkit-transform: skew(10deg);
-	//    -moz-transform: skew(10deg);
-	//     -o-transform: skew(10deg);
 }
 
 .toplinks:hover{
-	// padding-bottom: 5px;
 	text-shadow: -4px 0px 0px #FF0000, 4px 0px 0px #00FFFF;
 }
 
@@ -223,18 +217,6 @@ h2{
 	border-bottom: 0px solid;
 	font-style: normal;
 	font-size: 14px;
-}
-
-#maindescription{
-	text-align: center;
-	font-size: 14px;
-	padding-top: 50px;
-}
-iframe{
-	width: 70vw;
-	height: 78vh;
-	padding-top: 50px;
-	padding-bottom: 50px;
 }
 
 #paraclass{
@@ -285,16 +267,50 @@ iframe{
 	width: 70vw;
 	padding-left: 14vw;
 	padding-right: 14vw;
-		-webkit-transform: skewY(-5deg);
-	   -moz-transform: skewY(-5deg);
-	    -o-transform: skewY(-5deg);
+	-webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
 }
+
+
+#maindescription{
+	text-align: center;
+	font-size: 14px;
+	position: relative;
+	z-index: 1;
+	top: 50px;
+}
+
 
 .mainimgs{
 	width: 60vw;
 	opacity: 0.9;
+	margin: 0 auto;
+	display: block;
 	padding-top: 50px;
+	// margin-top: 50px;
 	padding-bottom: 20px;
+}
+
+.captions{
+	width: 100vw;
+	opacity: 1;
+	text-align: center;
+	color: #0F0F0F;
+	text-transform: uppercase;
+	font-family: 'Source Code Pro', 'Menlo', 'Monaco', monospace;
+	font-size: 14px;
+	padding-bottom: 1px;
+/*	border-bottom: 1px solid #0F0F0F;*/
+}
+
+
+iframe{
+	text-align: center;
+	margin: 0 auto;
+	width: 60vw;
+	// height: 78vh;
+	// padding-top: 50px;
 }
 
 .viewproject{
