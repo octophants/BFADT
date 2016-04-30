@@ -1,5 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300);
 
+@font-face {
+    font-family: 'Replica';
+    src: url('designers/fonts/Replica-Bold.otf') format('opentype');
+  	src: url('designers/fonts/Replica-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Replica-Regular';
+    // src: url('designers/fonts/Replica-Regular.otf') format('opentype');
+  	src: url('designers/fonts/Replica-Regular.ttf') format('truetype');
+}
+
 body{
 	margin: 0;
 	padding: 0;
@@ -29,8 +41,6 @@ body{
     background-color: rgba(255,255,255,0.8);
 }
 
-
-
 #topbar{
 	width: 100%;
 	height: 80px;
@@ -41,8 +51,29 @@ body{
 	color: #EBEBEB;
 	display: inline-block;
 	top: 0;
-	/*position: fixed;*/
 	z-index: 2;
+}
+
+h1{
+	color: white;
+	font-family: 'Replica', 'Helvetica', sans-serif;
+	font-size: 60px;
+	letter-spacing: 5px;
+	text-align: center;
+	text-shadow: -2px -2px 0px #FF0000, 2px 2px 0px #00FFFF;	
+}
+
+h2{
+	color: white;
+	font-family: 'Replica-Regular', 'Helvetica', sans-serif;
+	font-size: 40px;
+	letter-spacing: 5px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+h2 span{
+	text-shadow: -2px -2px 0px #FF0000, 2px 2px 0px #00FFFF;
 }
 
 .listelements{
@@ -56,8 +87,6 @@ body{
 }
 
 .listelements:hover{
-/*	padding-bottom: 10px;
-*/  /* border-bottom: 0.5px solid #EBEBEB;*/
    text-shadow: -2px 0px 0px #FF0000, 2px 0px 0px #00FFFF;
    opacity: 1;
 }
@@ -73,10 +102,10 @@ a.aboutlink{
 }
 
 #boxwrapper{
-width: 100%;
-text-align: center;
-position: relative;
-z-index: 1;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
 }
 
 .box{
@@ -144,10 +173,10 @@ opacity: 0.1;
 }
 */
 img{
-width: 16.35vw;
-height: 15vw; 
-padding: 0;
-margin: 0;
+	width: 16.35vw;
+	height: 15vw; 
+	padding: 0;
+	margin: 0;
 }
 
 #canvasIdentity{
@@ -201,12 +230,14 @@ transform: rotate(180deg);
 }
 
 .aboutpara{
+	position: relative;
+	top: 50px;
     font-family: 'Source Code Pro', Arial, monospace;
     color: #EBEBEB;
-    font-size: 16px;
-    width: 70vw;
-    margin-left: 14vw;
-    margin-right: 14vw;
+    font-size: 26px;
+    width: 60vw;
+	margin: 0 auto; 
+	text-align: center;
 }
 
 .aboutpara a{

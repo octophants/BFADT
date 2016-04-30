@@ -132,6 +132,8 @@ h2{
 	text-align: right;
 }
 
+
+
 #topdescrips #project p.description1{
 	font-family: 'Source Code Pro', 'Menlo', 'Monaco', monospace;
 	font-weight: 400;
@@ -209,6 +211,11 @@ a.viewproject{
 	transition: all ease 0.2s;
 }
 
+.link{
+	text-decoration: none;
+	color: white;
+}
+.link:hover, 
 .toplinks:hover{
 	text-shadow: -4px 0px 0px #FF0000, 4px 0px 0px #00FFFF;
 }
@@ -270,8 +277,8 @@ a.viewproject{
 	-webkit-transform: skewY(-5deg);
     -moz-transform: skewY(-5deg);
     -o-transform: skewY(-5deg);
+    margin-bottom: 15px;
 }
-
 
 #maindescription{
 	text-align: center;
@@ -290,6 +297,12 @@ a.viewproject{
 	padding-top: 50px;
 	// margin-top: 50px;
 	padding-bottom: 20px;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;           /* Non-prefixed version, currently*/                      
 }
 
 .captions{
